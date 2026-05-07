@@ -2,7 +2,7 @@
 const filterEvenNumbers = (nums: number[]): number[] => {
     return nums.filter(num => num % 2 == 0)
 }
-console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
+filterEvenNumbers([1, 2, 3, 4, 5, 6]);
 
 // Problem 2
 const reverseString = (str: string): string => {
@@ -12,24 +12,24 @@ const reverseString = (str: string): string => {
     }
     return reversed
 }
-console.log(reverseString("typescript"));
+reverseString("typescript");
 
 // Problem 3:
 const checkType = (type: string | number): string | number => {
-    if (typeof type === 'string')
-        return type
+    if (typeof type === "string")
+        return "String";
     else
-        return type
+        return "Number";
 }
-console.log(checkType("Hello"));
-console.log(checkType(42));
+checkType("Hello");
+checkType(42);
 
 // Problem 4:
 const getProperty = (object: any, key: any): any => {
     return object[key]
 }
 const user = { id: 1, name: "John Doe", age: 21 };
-console.log(getProperty(user, "name"));
+getProperty(user, "name");
 
 // Problem 5:
 interface Book {
@@ -45,7 +45,7 @@ const toggleReadStatus = (book: Book) => {
     }
 }
 const myBook = { title: "TypeScript Guide", author: "Jane Doe", publishedYear: 2024 };
-console.log(toggleReadStatus(myBook));
+toggleReadStatus(myBook);
 
 // Problem 6:
 class Person {
@@ -69,14 +69,14 @@ class Student extends Person {
 }
 
 const student = new Student("Alice", 20, "A");
-console.log(student.getDetails());
+student.getDetails();
 
 
 // Problem 7:
 const getIntersection = (array1: number[], array2: number[]): number[] => {
     return array1.filter(n => array2.includes(n))
 }
-console.log(getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
+getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]);
 
 
 
