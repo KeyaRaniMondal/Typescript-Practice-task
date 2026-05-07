@@ -73,8 +73,8 @@ console.log(student.getDetails());
 
 
 // Problem 7:
-const getIntersection=(array1:number[],array2:number[]):number[]=>{
-    return array1.filter(n=>array2.includes(n))
+const getIntersection = (array1: number[], array2: number[]): number[] => {
+    return array1.filter(n => array2.includes(n))
 }
 console.log(getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
 
